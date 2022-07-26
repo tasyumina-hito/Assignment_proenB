@@ -52,7 +52,7 @@ const Authentication = () => {
             align="center"
             sx={{ margin: '40px 16px', color: 'rgba(0, 0, 0, 0.6)', fontSize: '1.3rem' }}
         >
-            <GoogleOAuthProvider clientId="1067323507987-qo2c8pff22jlhb9bl7a5m65b259tpjpk.apps.googleusercontent.com">
+            <GoogleOAuthProvider clientId="process.env.">
                 <GoogleLogin align="center"
                     onSuccess={credentialResponse => {
                         console.log(credentialResponse);
